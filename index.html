@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=FontName">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Start Paget</title>
+</head>
+<body>
+
+    <div class="welcome-message slide-element">
+        <h1>Hello!</h1>
+        <p>Welcome to my app</p>
+    </div>
+
+    <div class="start-button slide-element">
+        <a href="home.html">
+            <i class="fas fa-home"></i>
+        </a>
+    </div>
+
+    <footer class="slide-element">
+        <p>Copyright &copy; 2021</p>
+        <p>Made by Nelkeys</p>
+    </footer>
+    
+
+
+
+
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const slideElements = document.querySelectorAll('.slide-element');
+            slideElements.forEach((element, index) => {
+                element.style.transitionDelay = `${index * 0.3}s`;
+                element.style.transform = 'translateX(0)';
+            });
+        });
+    </script>
+</body>
+</html>

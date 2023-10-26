@@ -1,0 +1,25 @@
+:root{
+    --background:#eee;
+    --text-color:#2a2a2a;
+    --primary-color:#0a60ea;
+}
+*{
+    padding: 0;
+    margin: 0;   
+}
+body{
+    font-family: Arial, sans-serif;
+    background: var(--background);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5em 1.5em;
+    color: var(--background);
+    background:var(--primary-color) ;
+}
+header a{
+    color: var(--background);
+    text-decoration: none;
+}
